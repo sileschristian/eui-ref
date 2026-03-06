@@ -1,0 +1,3238 @@
+{
+  "EuiFlexGroup": {
+    "import": "import { EuiFlexGroup, EuiFlexItem } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/layout/flex/group/",
+    "category": "Layout",
+    "aliases": [
+      "flex",
+      "flexgroup",
+      "row"
+    ],
+    "variants": [
+      {
+        "name": "Row (default)",
+        "desc": "Horizontal layout with gutters",
+        "note": "Use EuiFlexGroup for a single-row horizontal layout — pair with EuiFlexItem children and gutterSize to control spacing."
+      },
+      {
+        "name": "Column",
+        "desc": "direction='column' for vertical stacking",
+        "note": "Use EuiFlexGroup with direction=\"column\" to stack items vertically instead of horizontally."
+      },
+      {
+        "name": "Wrap",
+        "desc": "wrap={true} for responsive wrapping rows",
+        "note": "Use EuiFlexGroup with wrap={true} so items wrap onto the next row when they exceed the container width."
+      },
+      {
+        "name": "Responsive",
+        "desc": "responsive={false} to disable mobile stacking",
+        "note": "Use EuiFlexGroup with responsive={false} to prevent automatic stacking on mobile breakpoints."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "gutterSize",
+        "values": "'none'|'xs'|'s'|'m'|'l'|'xl'",
+        "desc": "space between items"
+      },
+      {
+        "name": "alignItems",
+        "values": "'center'|'flexStart'|'flexEnd'|'stretch'",
+        "desc": "vertical alignment"
+      },
+      {
+        "name": "justifyContent",
+        "values": "'spaceBetween'|'center'|'flexEnd'",
+        "desc": "horizontal distribution"
+      },
+      {
+        "name": "direction",
+        "values": "'row'|'column'",
+        "desc": "flex direction"
+      }
+    ]
+  },
+  "EuiFlexItem": {
+    "import": "import { EuiFlexItem } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/layout/flex/item/",
+    "category": "Layout",
+    "aliases": [
+      "flexitem",
+      "item"
+    ],
+    "keyProps": [
+      {
+        "name": "grow",
+        "values": "false|1-10",
+        "desc": "false to prevent growing, number for ratio"
+      }
+    ]
+  },
+  "EuiFlexGrid": {
+    "import": "import { EuiFlexGrid, EuiFlexItem } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/layout/flex/grid/",
+    "category": "Layout",
+    "aliases": [
+      "flexgrid",
+      "grid"
+    ],
+    "keyProps": [
+      {
+        "name": "columns",
+        "values": "1|2|3|4",
+        "desc": "number of equal-width columns"
+      },
+      {
+        "name": "gutterSize",
+        "values": "'none'|'xs'|'s'|'m'|'l'|'xl'",
+        "desc": "space between cells"
+      }
+    ]
+  },
+  "EuiHeader": {
+    "import": "import { EuiHeader, EuiHeaderSection, EuiHeaderSectionItem, EuiHeaderLogo } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/layout/header/",
+    "category": "Layout",
+    "aliases": [
+      "header",
+      "navbar"
+    ],
+    "variants": [
+      {
+        "name": "Fixed",
+        "desc": "position='fixed' sticks to top of viewport",
+        "note": "Use EuiHeader with position=\"fixed\" to stick the header to the top of the viewport — combine with EuiHeaderSection and EuiHeaderSectionItem for layout."
+      },
+      {
+        "name": "Dark",
+        "desc": "theme='dark' for inverted color scheme",
+        "note": "Use EuiHeader with theme=\"dark\" for an inverted dark color scheme, typically used for the top-level app navigation bar."
+      },
+      {
+        "name": "Stacked",
+        "desc": "Multiple EuiHeaders stacked for app + section nav",
+        "note": "Use multiple EuiHeader components stacked vertically — the first for global app nav, the second for section-level navigation."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "position",
+        "values": "'static'|'fixed'",
+        "desc": "fixed sticks to top"
+      },
+      {
+        "name": "theme",
+        "values": "'default'|'dark'",
+        "desc": "color theme"
+      }
+    ]
+  },
+  "EuiSpacer": {
+    "import": "import { EuiSpacer } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/layout/spacer/",
+    "category": "Layout",
+    "aliases": [
+      "spacer",
+      "space",
+      "gap"
+    ],
+    "keyProps": [
+      {
+        "name": "size",
+        "values": "'xs'|'s'|'m'|'l'|'xl'|'xxl'",
+        "desc": "vertical space amount (default 'l')"
+      }
+    ]
+  },
+  "EuiHorizontalRule": {
+    "import": "import { EuiHorizontalRule } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/layout/horizontal-rule/",
+    "category": "Layout",
+    "aliases": [
+      "hr",
+      "divider",
+      "rule"
+    ],
+    "keyProps": [
+      {
+        "name": "size",
+        "values": "'full'|'half'|'quarter'",
+        "desc": "width of the rule"
+      },
+      {
+        "name": "margin",
+        "values": "'none'|'xs'|'s'|'m'|'l'|'xl'|'xxl'",
+        "desc": "vertical margin"
+      }
+    ]
+  },
+  "EuiPageHeader": {
+    "import": "import { EuiPageHeader } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/layout/page-header/",
+    "category": "Layout",
+    "aliases": [
+      "pageheader"
+    ],
+    "keyProps": [
+      {
+        "name": "pageTitle",
+        "values": "string",
+        "desc": "main heading text"
+      },
+      {
+        "name": "description",
+        "values": "string",
+        "desc": "subtitle below the title"
+      },
+      {
+        "name": "tabs",
+        "values": "EuiTabProps[]",
+        "desc": "tabs rendered below the title"
+      },
+      {
+        "name": "rightSideItems",
+        "values": "ReactNode[]",
+        "desc": "actions placed on the right"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Title only",
+        "desc": "simple heading with optional description",
+        "url": "https://eui.elastic.co/docs/components/layout/page-header/",
+        "note": "Use EuiPageHeader with just pageTitle and an optional description string for a simple section heading."
+      },
+      {
+        "name": "With actions",
+        "desc": "rightSideItems for CTA buttons",
+        "url": "https://eui.elastic.co/docs/components/layout/page-header/",
+        "note": "Use EuiPageHeader with rightSideItems as an array of buttons or controls placed on the right side of the header."
+      },
+      {
+        "name": "With tabs",
+        "desc": "tabs prop renders navigation below the title",
+        "url": "https://eui.elastic.co/docs/components/layout/page-header/",
+        "note": "Use EuiPageHeader with the tabs prop to render a tab bar directly below the page title for section navigation."
+      },
+      {
+        "name": "With breadcrumbs",
+        "desc": "breadcrumbs prop above the title",
+        "url": "https://eui.elastic.co/docs/components/layout/page-header/",
+        "note": "Use EuiPageHeader with breadcrumbs prop to render a breadcrumb trail above the page title."
+      },
+      {
+        "name": "With icon or avatar",
+        "desc": "iconType or custom left-side element",
+        "url": "https://eui.elastic.co/docs/components/layout/page-header/",
+        "note": "Use EuiPageHeader with iconType to display an icon or logo to the left of the page title."
+      }
+    ]
+  },
+  "EuiPanel": {
+    "import": "import { EuiPanel } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/containers/panel/",
+    "category": "Containers",
+    "aliases": [
+      "panel",
+      "box",
+      "container",
+      "surface"
+    ],
+    "variants": [
+      {
+        "name": "Plain with shadow",
+        "desc": "default white surface",
+        "url": "https://eui.elastic.co/docs/components/containers/panel/",
+        "note": "Use EuiPanel with hasShadow={true} for a standard elevated surface."
+      },
+      {
+        "name": "Bordered",
+        "desc": "no shadow, clean border",
+        "url": "https://eui.elastic.co/docs/components/containers/panel/#bordered",
+        "note": "Use EuiPanel with hasBorder={true} and hasShadow={false} for a flat bordered card without elevation."
+      },
+      {
+        "name": "Subdued",
+        "desc": "gray background section",
+        "url": "https://eui.elastic.co/docs/components/containers/panel/#colors",
+        "note": "Use EuiPanel with color=\"subdued\" for a gray background section that visually separates content."
+      },
+      {
+        "name": "Status color",
+        "desc": "semantic color for alerts or highlights",
+        "url": "https://eui.elastic.co/docs/components/containers/panel/#colors",
+        "note": "Use EuiPanel with color=\"primary\", \"success\", \"warning\", or \"danger\" for semantic status highlights."
+      },
+      {
+        "name": "Clickable (card)",
+        "desc": "interactive panel for navigation",
+        "url": "https://eui.elastic.co/docs/components/containers/panel/#interactive-panels",
+        "note": "Use EuiPanel with onClick for a clickable card — add cursor: pointer via style."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "paddingSize",
+        "values": "'none'|'s'|'m'|'l'|'xl'",
+        "desc": "internal padding"
+      },
+      {
+        "name": "hasShadow",
+        "values": "boolean",
+        "desc": "drop shadow"
+      },
+      {
+        "name": "hasBorder",
+        "values": "boolean",
+        "desc": "border instead of shadow"
+      },
+      {
+        "name": "color",
+        "values": "'plain'|'subdued'|'transparent'|'primary'|'success'|'warning'|'danger'",
+        "desc": "background"
+      },
+      {
+        "name": "borderRadius",
+        "values": "'none'|'m'",
+        "desc": "corner rounding"
+      }
+    ]
+  },
+  "EuiFlyout": {
+    "import": "import { EuiFlyout, EuiFlyoutHeader, EuiFlyoutBody, EuiFlyoutFooter } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/containers/flyout/",
+    "category": "Containers",
+    "aliases": [
+      "flyout",
+      "drawer",
+      "sidebar"
+    ],
+    "variants": [
+      {
+        "name": "Overlay (default)",
+        "desc": "covers page with mask, traps focus",
+        "url": "https://eui.elastic.co/docs/components/containers/flyout/",
+        "note": "Use the default overlay variant of EuiFlyout — it covers the page with a mask and traps focus inside the panel."
+      },
+      {
+        "name": "Push",
+        "desc": "page stays interactive, adds body padding",
+        "url": "https://eui.elastic.co/docs/components/containers/flyout/#push-flyout",
+        "note": "Use the Push variant of EuiFlyout — type=\"push\" keeps the page interactive by adding body padding instead of an overlay mask."
+      },
+      {
+        "name": "Resizable",
+        "desc": "drag handle to resize width",
+        "url": "https://eui.elastic.co/docs/components/containers/flyout/#resizable-flyout",
+        "note": "Use the Resizable variant of EuiFlyout — add resizable={true} with minWidth and maxWidth so users can drag to resize the panel."
+      },
+      {
+        "name": "Without ownFocus",
+        "desc": "page remains visible and clickable",
+        "url": "https://eui.elastic.co/docs/components/containers/flyout/#without-ownfocus",
+        "note": "Use EuiFlyout without ownFocus — set ownFocus={false} so the page content remains visible and clickable behind the flyout."
+      },
+      {
+        "name": "Child flyout (session)",
+        "desc": "side-by-side child panel with history nav",
+        "url": "https://eui.elastic.co/docs/components/containers/flyout/#flyout-session-management",
+        "note": "Use the Child flyout session variant of EuiFlyout — set session=\"start\" on the parent and session=\"inherit\" on the child to render side-by-side panels with built-in history navigation."
+      },
+      {
+        "name": "With banner",
+        "desc": "EuiCallOut banner at top of body",
+        "url": "https://eui.elastic.co/docs/components/containers/flyout/#banners",
+        "note": "Use EuiFlyout with a banner — pass an EuiCallOut to the banner prop of EuiFlyoutBody to display a pinned notice at the top of the flyout body."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "onClose",
+        "values": "function",
+        "desc": "required — fired on dismiss"
+      },
+      {
+        "name": "type",
+        "values": "'overlay'|'push'",
+        "desc": "overlay or push layout mode"
+      },
+      {
+        "name": "size",
+        "values": "'s'|'m'|'l'|number",
+        "desc": "panel width"
+      },
+      {
+        "name": "side",
+        "values": "'right'|'left'",
+        "desc": "which edge to attach to"
+      },
+      {
+        "name": "ownFocus",
+        "values": "boolean",
+        "desc": "adds overlay mask (default true)"
+      },
+      {
+        "name": "resizable",
+        "values": "boolean",
+        "desc": "drag to resize"
+      },
+      {
+        "name": "session",
+        "values": "'start'|'inherit'|'never'",
+        "desc": "managed session mode"
+      },
+      {
+        "name": "maxWidth",
+        "values": "boolean|number|string",
+        "desc": "cap the max width"
+      }
+    ]
+  },
+  "EuiModal": {
+    "import": "import { EuiModal, EuiModalHeader, EuiModalHeaderTitle, EuiModalBody, EuiModalFooter } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/containers/modal/",
+    "category": "Containers",
+    "aliases": [
+      "modal",
+      "dialog",
+      "popup"
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "full modal with header, body, footer",
+        "url": "https://eui.elastic.co/docs/components/containers/modal/",
+        "note": "Use EuiModal with EuiModalHeader, EuiModalBody, and EuiModalFooter for a standard dialog — always include aria-labelledby pointing to the title id."
+      },
+      {
+        "name": "Confirm dialog",
+        "desc": "yes/no destructive action confirmation",
+        "url": "https://eui.elastic.co/docs/components/containers/modal/#confirm-modal",
+        "note": "Use EuiConfirmModal for yes/no destructive confirmations — set buttonColor=\"danger\" and defaultFocusedButton=\"confirm\"."
+      },
+      {
+        "name": "Form modal",
+        "desc": "modal containing a form",
+        "url": "https://eui.elastic.co/docs/components/containers/modal/",
+        "note": "Use EuiModal containing an EuiForm when you need a dialog with form inputs — wire the submit button to your form handler."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "onClose",
+        "values": "function",
+        "desc": "required — fired on dismiss"
+      },
+      {
+        "name": "maxWidth",
+        "values": "boolean|number|string",
+        "desc": "constrains width"
+      },
+      {
+        "name": "initialFocus",
+        "values": "string|function",
+        "desc": "focus target on open"
+      }
+    ]
+  },
+  "EuiAccordion": {
+    "import": "import { EuiAccordion } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/containers/accordion/",
+    "category": "Containers",
+    "aliases": [
+      "accordion",
+      "collapse",
+      "expand"
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "Basic collapsible section with arrow toggle",
+        "note": "Use EuiAccordion for a basic collapsible section with an arrow toggle — always provide a unique id prop for accessibility."
+      },
+      {
+        "name": "With button content",
+        "desc": "buttonContent prop for custom trigger label",
+        "note": "Use EuiAccordion with buttonContent prop to fully customize the trigger label with icons or rich content."
+      },
+      {
+        "name": "Extra actions",
+        "desc": "extraAction prop adds element on the right of the trigger",
+        "note": "Use EuiAccordion with extraAction prop to add an icon button or action on the right side of the trigger row."
+      },
+      {
+        "name": "Bordered",
+        "desc": "borders and padding for card-like sections",
+        "note": "Use EuiAccordion with borders and paddingSize for a card-like collapsible section with visual separation."
+      },
+      {
+        "name": "Flush",
+        "desc": "paddingSize='none' for tight layouts",
+        "note": "Use EuiAccordion with paddingSize=\"none\" for tight layouts where you control your own internal padding."
+      },
+      {
+        "name": "Force open/closed",
+        "desc": "forceState to control from outside",
+        "note": "Use EuiAccordion with forceState=\"open\" or \"closed\" to control the expanded state from outside the component."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "id",
+        "values": "string",
+        "desc": "required for accessibility"
+      },
+      {
+        "name": "buttonContent",
+        "values": "ReactNode",
+        "desc": "trigger label content"
+      },
+      {
+        "name": "forceState",
+        "values": "'open'|'closed'",
+        "desc": "controlled open state"
+      },
+      {
+        "name": "initialIsOpen",
+        "values": "boolean",
+        "desc": "open on first render"
+      },
+      {
+        "name": "paddingSize",
+        "values": "'none'|'s'|'m'|'l'|'xl'",
+        "desc": "body padding"
+      }
+    ]
+  },
+  "EuiPopover": {
+    "import": "import { EuiPopover } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/containers/popover/",
+    "category": "Containers",
+    "aliases": [
+      "popover",
+      "dropdown",
+      "overlay"
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "Anchored panel with arrow pointing to trigger",
+        "note": "Use EuiPopover as an anchored floating panel — pass the trigger as the button prop and control visibility with isOpen and closePopover."
+      },
+      {
+        "name": "Panel-less",
+        "desc": "hasPanel={false} for custom floating content",
+        "note": "Use EuiPopover with hasPanel={false} to render custom floating content without the default panel background."
+      },
+      {
+        "name": "With title",
+        "desc": "EuiPopoverTitle pinned inside popover",
+        "note": "Use EuiPopover with EuiPopoverTitle inside to pin a bold title at the top of the popover panel."
+      },
+      {
+        "name": "With footer",
+        "desc": "EuiPopoverFooter pinned at bottom",
+        "note": "Use EuiPopover with EuiPopoverFooter inside to pin action buttons at the bottom of the popover panel."
+      },
+      {
+        "name": "Input popover",
+        "desc": "EuiInputPopover anchors to a form input",
+        "note": "Use EuiInputPopover to anchor a floating panel directly below a form input — useful for custom autocomplete or date pickers."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "isOpen",
+        "values": "boolean",
+        "desc": "controls visibility"
+      },
+      {
+        "name": "closePopover",
+        "values": "function",
+        "desc": "required close callback"
+      },
+      {
+        "name": "button",
+        "values": "ReactNode",
+        "desc": "the trigger element"
+      },
+      {
+        "name": "anchorPosition",
+        "values": "'downCenter'|'downLeft'|'upCenter'...",
+        "desc": "placement relative to trigger"
+      },
+      {
+        "name": "panelPaddingSize",
+        "values": "'none'|'s'|'m'|'l'",
+        "desc": "inner padding"
+      }
+    ]
+  },
+  "EuiToolTip": {
+    "import": "import { EuiToolTip } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/containers/tooltip/",
+    "category": "Containers",
+    "aliases": [
+      "tooltip",
+      "tip",
+      "hint"
+    ],
+    "keyProps": [
+      {
+        "name": "content",
+        "values": "ReactNode",
+        "desc": "tooltip body text"
+      },
+      {
+        "name": "position",
+        "values": "'top'|'bottom'|'left'|'right'",
+        "desc": "placement (default 'top')"
+      },
+      {
+        "name": "title",
+        "values": "string",
+        "desc": "optional bold heading inside tooltip"
+      },
+      {
+        "name": "delay",
+        "values": "'regular'|'long'",
+        "desc": "hover delay before showing"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "appears on hover above the element",
+        "url": "https://eui.elastic.co/docs/components/containers/tooltip/",
+        "note": "Use EuiToolTip wrapping any element — it shows the content prop as a tooltip on hover, positioned above by default."
+      },
+      {
+        "name": "Positioned",
+        "desc": "position prop controls placement",
+        "url": "https://eui.elastic.co/docs/components/containers/tooltip/",
+        "note": "Use EuiToolTip with position=\"bottom\", \"left\", or \"right\" to control which side the tooltip appears on."
+      },
+      {
+        "name": "With title",
+        "desc": "bold heading above the tooltip body",
+        "url": "https://eui.elastic.co/docs/components/containers/tooltip/",
+        "note": "Use EuiToolTip with a title prop to add a bold heading above the tooltip description text."
+      },
+      {
+        "name": "On disabled elements",
+        "desc": "wrap in a span to enable tooltip on disabled buttons",
+        "url": "https://eui.elastic.co/docs/components/containers/tooltip/",
+        "note": "Use EuiToolTip wrapping a span around a disabled element — disabled elements do not fire mouse events so the span is required."
+      }
+    ]
+  },
+  "EuiCallOut": {
+    "import": "import { EuiCallOut } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/containers/callout/",
+    "category": "Containers",
+    "aliases": [
+      "callout",
+      "alert",
+      "notice",
+      "warning",
+      "banner"
+    ],
+    "variants": [
+      {
+        "name": "Info / primary",
+        "desc": "informational message",
+        "url": "https://eui.elastic.co/docs/components/containers/callout/",
+        "note": "Use EuiCallOut with color=\"primary\" for informational messages that need attention without urgency."
+      },
+      {
+        "name": "Success",
+        "desc": "confirmation message",
+        "url": "https://eui.elastic.co/docs/components/containers/callout/",
+        "note": "Use EuiCallOut with color=\"success\" to confirm a completed action."
+      },
+      {
+        "name": "Warning",
+        "desc": "caution message",
+        "url": "https://eui.elastic.co/docs/components/containers/callout/",
+        "note": "Use EuiCallOut with color=\"warning\" to alert users to something that needs review."
+      },
+      {
+        "name": "Danger / error",
+        "desc": "error or critical message",
+        "url": "https://eui.elastic.co/docs/components/containers/callout/",
+        "note": "Use EuiCallOut with color=\"danger\" for errors or critical failures."
+      },
+      {
+        "name": "Dismissible",
+        "desc": "callout with close button",
+        "url": "https://eui.elastic.co/docs/components/containers/callout/#dismissible",
+        "note": "Use EuiCallOut with onDismiss to let users close the callout — manage visibility with local state."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "title",
+        "values": "ReactNode",
+        "desc": "heading text"
+      },
+      {
+        "name": "color",
+        "values": "'primary'|'success'|'warning'|'danger'",
+        "desc": "severity color"
+      },
+      {
+        "name": "iconType",
+        "values": "string",
+        "desc": "override the default icon"
+      },
+      {
+        "name": "onDismiss",
+        "values": "function",
+        "desc": "adds a dismiss button"
+      }
+    ]
+  },
+  "EuiCard": {
+    "import": "import { EuiCard } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/containers/card/",
+    "category": "Containers",
+    "aliases": [
+      "card"
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "Vertical layout with title, description, footer",
+        "note": "Use EuiCard with title, description, and optional footer for a standard vertical content card."
+      },
+      {
+        "name": "Horizontal",
+        "desc": "layout='horizontal' for icon + text side by side",
+        "note": "Use EuiCard with layout=\"horizontal\" to place an icon beside the text — good for feature lists or compact option cards."
+      },
+      {
+        "name": "Selectable",
+        "desc": "selectable prop turns card into a checkbox",
+        "note": "Use EuiCard with selectable prop to turn it into a checkbox-style selection card — manages its own selected and disabled state."
+      },
+      {
+        "name": "Clickable",
+        "desc": "onClick for navigation cards",
+        "note": "Use EuiCard with onClick to make the entire card a clickable navigation element."
+      },
+      {
+        "name": "Beta badge",
+        "desc": "betaBadgeProps to show a badge on the card",
+        "note": "Use EuiCard with betaBadgeProps to display a beta or experimental badge in the top corner of the card."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "title",
+        "values": "ReactNode",
+        "desc": "required card heading"
+      },
+      {
+        "name": "description",
+        "values": "ReactNode",
+        "desc": "body text"
+      },
+      {
+        "name": "icon",
+        "values": "ReactNode",
+        "desc": "icon above title"
+      },
+      {
+        "name": "layout",
+        "values": "'vertical'|'horizontal'",
+        "desc": "content direction"
+      },
+      {
+        "name": "selectable",
+        "values": "{ onClick, isSelected, isDisabled }",
+        "desc": "checkbox card"
+      }
+    ]
+  },
+  "EuiButton": {
+    "import": "import { EuiButton } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/navigation/buttons/button/",
+    "category": "Navigation",
+    "aliases": [
+      "button",
+      "btn"
+    ],
+    "variants": [
+      {
+        "name": "Primary (filled)",
+        "desc": "main CTA",
+        "url": "https://eui.elastic.co/docs/components/navigation/buttons/button/",
+        "note": "Use EuiButton with fill={true} as the primary CTA — this is the solid filled style for the main action on a page."
+      },
+      {
+        "name": "Secondary (empty)",
+        "desc": "secondary/tertiary action",
+        "url": "https://eui.elastic.co/docs/components/navigation/buttons/button/",
+        "note": "Use EuiButtonEmpty as a secondary or tertiary action — it has no background, suitable for cancel or low-emphasis actions."
+      },
+      {
+        "name": "Icon button",
+        "desc": "icon-only action with tooltip",
+        "url": "https://eui.elastic.co/docs/components/navigation/buttons/button/",
+        "note": "Use EuiButtonIcon for icon-only actions — always include an aria-label for accessibility."
+      },
+      {
+        "name": "With icon",
+        "desc": "button with leading icon",
+        "url": "https://eui.elastic.co/docs/components/navigation/buttons/button/",
+        "note": "Use EuiButton with iconType to add a leading icon alongside the button label."
+      },
+      {
+        "name": "Loading state",
+        "desc": "async action in progress",
+        "url": "https://eui.elastic.co/docs/components/navigation/buttons/button/",
+        "note": "Use EuiButton with isLoading={true} to show a spinner during async operations."
+      },
+      {
+        "name": "Danger",
+        "desc": "destructive action",
+        "url": "https://eui.elastic.co/docs/components/navigation/buttons/button/",
+        "note": "Use EuiButton with color=\"danger\" and fill={true} for destructive actions like delete or remove."
+      },
+      {
+        "name": "Button group (segmented)",
+        "desc": "toggle between options",
+        "url": "https://eui.elastic.co/docs/components/navigation/buttons/button-group/",
+        "note": "Use EuiButtonGroup for segmented controls — type=\"single\" behaves like a radio group, type=\"multi\" like checkboxes."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "fill",
+        "values": "boolean",
+        "desc": "solid filled style (primary CTA)"
+      },
+      {
+        "name": "color",
+        "values": "'primary'|'neutral'|'success'|'warning'|'danger'|'text'|'accent'",
+        "desc": ""
+      },
+      {
+        "name": "size",
+        "values": "'s'|'m'",
+        "desc": "button size"
+      },
+      {
+        "name": "iconType",
+        "values": "string",
+        "desc": "EUI icon name"
+      },
+      {
+        "name": "iconSide",
+        "values": "'left'|'right'",
+        "desc": "icon placement"
+      },
+      {
+        "name": "isLoading",
+        "values": "boolean",
+        "desc": "loading spinner state"
+      }
+    ]
+  },
+  "EuiButtonEmpty": {
+    "import": "import { EuiButtonEmpty } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/navigation/buttons/button/",
+    "category": "Navigation",
+    "aliases": [
+      "buttonempty",
+      "ghost button",
+      "text button",
+      "secondary button"
+    ],
+    "keyProps": [
+      {
+        "name": "color",
+        "values": "'primary'|'text'|'danger'",
+        "desc": "text color"
+      },
+      {
+        "name": "size",
+        "values": "'xs'|'s'|'m'",
+        "desc": "xs for compact UIs"
+      },
+      {
+        "name": "iconType",
+        "values": "string",
+        "desc": "EUI icon name"
+      },
+      {
+        "name": "flush",
+        "values": "'left'|'right'|'both'",
+        "desc": "removes padding on that side"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "no background, for secondary actions",
+        "url": "https://eui.elastic.co/docs/components/navigation/buttons/button/",
+        "note": "Use EuiButtonEmpty as a secondary or cancel action — it has no background fill and lower visual weight than EuiButton."
+      },
+      {
+        "name": "With icon",
+        "desc": "iconType adds a leading icon",
+        "url": "https://eui.elastic.co/docs/components/navigation/buttons/button/",
+        "note": "Use EuiButtonEmpty with iconType to add a leading icon alongside the label for contextual actions like add, edit, or external link."
+      },
+      {
+        "name": "Flush",
+        "desc": "flush removes padding on one side for edge alignment",
+        "url": "https://eui.elastic.co/docs/components/navigation/buttons/button/",
+        "note": "Use EuiButtonEmpty with flush=\"left\" or flush=\"right\" to remove padding on that side so it aligns flush with surrounding content."
+      },
+      {
+        "name": "Danger",
+        "desc": "color=danger for destructive secondary actions",
+        "url": "https://eui.elastic.co/docs/components/navigation/buttons/button/",
+        "note": "Use EuiButtonEmpty with color=\"danger\" for a low-emphasis destructive action like remove or disconnect."
+      },
+      {
+        "name": "Extra small",
+        "desc": "size=xs for compact toolbars",
+        "url": "https://eui.elastic.co/docs/components/navigation/buttons/button/",
+        "note": "Use EuiButtonEmpty with size=\"xs\" for compact toolbar or inline actions where space is constrained."
+      }
+    ]
+  },
+  "EuiButtonIcon": {
+    "import": "import { EuiButtonIcon } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/navigation/buttons/button/",
+    "category": "Navigation",
+    "aliases": [
+      "buttonicon",
+      "icon button",
+      "icon action"
+    ],
+    "keyProps": [
+      {
+        "name": "iconType",
+        "values": "string",
+        "desc": "required EUI icon name"
+      },
+      {
+        "name": "aria-label",
+        "values": "string",
+        "desc": "required for accessibility"
+      },
+      {
+        "name": "display",
+        "values": "'empty'|'base'|'fill'",
+        "desc": "background style"
+      },
+      {
+        "name": "color",
+        "values": "'primary'|'text'|'danger'...",
+        "desc": "icon color"
+      },
+      {
+        "name": "size",
+        "values": "'xs'|'s'|'m'",
+        "desc": "button size"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "icon-only button with aria-label",
+        "url": "https://eui.elastic.co/docs/components/navigation/buttons/button/",
+        "note": "Use EuiButtonIcon for icon-only actions — always provide aria-label for accessibility since there is no visible text."
+      },
+      {
+        "name": "Filled",
+        "desc": "display=fill for prominent icon buttons",
+        "url": "https://eui.elastic.co/docs/components/navigation/buttons/button/",
+        "note": "Use EuiButtonIcon with display=\"fill\" for a solid background icon button that needs more visual prominence."
+      },
+      {
+        "name": "Base",
+        "desc": "display=base adds a subtle background",
+        "url": "https://eui.elastic.co/docs/components/navigation/buttons/button/",
+        "note": "Use EuiButtonIcon with display=\"base\" for a subtle bordered background, useful in toolbars and action columns."
+      },
+      {
+        "name": "Danger",
+        "desc": "color=danger for destructive icon actions",
+        "url": "https://eui.elastic.co/docs/components/navigation/buttons/button/",
+        "note": "Use EuiButtonIcon with color=\"danger\" for destructive actions like delete or remove in table row actions."
+      },
+      {
+        "name": "In table actions",
+        "desc": "typical delete/edit pattern in BasicTable",
+        "url": "https://eui.elastic.co/docs/components/navigation/buttons/button/",
+        "note": "Use EuiButtonIcon in EuiBasicTable actions column — combine edit (pencil icon) and delete (trash icon, danger color) as the standard row action pattern."
+      }
+    ]
+  },
+  "EuiButtonGroup": {
+    "import": "import { EuiButtonGroup } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/navigation/buttons/button-group/",
+    "category": "Navigation",
+    "aliases": [
+      "buttongroup",
+      "segmented control",
+      "toggle buttons"
+    ],
+    "variants": [
+      {
+        "name": "Single select",
+        "desc": "type='single' like a radio group",
+        "note": "Use EuiButtonGroup with type=\"single\" for a segmented control that behaves like a radio group — one selection at a time."
+      },
+      {
+        "name": "Multi select",
+        "desc": "type='multi' like checkboxes",
+        "note": "Use EuiButtonGroup with type=\"multi\" for a toggle group where multiple buttons can be active simultaneously."
+      },
+      {
+        "name": "Icon only",
+        "desc": "isIconOnly={true} with tooltips",
+        "note": "Use EuiButtonGroup with isIconOnly={true} to show icon-only buttons — each button automatically gets a tooltip from its label."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "options",
+        "values": "{ id, label, iconType }[]",
+        "desc": "required button definitions"
+      },
+      {
+        "name": "idSelected",
+        "values": "string",
+        "desc": "controlled selected id (single)"
+      },
+      {
+        "name": "onChange",
+        "values": "function",
+        "desc": "fired on selection change"
+      },
+      {
+        "name": "type",
+        "values": "'single'|'multi'",
+        "desc": "selection mode"
+      },
+      {
+        "name": "isIconOnly",
+        "values": "boolean",
+        "desc": "icon-only buttons with tooltips"
+      }
+    ]
+  },
+  "EuiBreadcrumbs": {
+    "import": "import { EuiBreadcrumbs } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/navigation/breadcrumbs/",
+    "category": "Navigation",
+    "aliases": [
+      "breadcrumbs",
+      "breadcrumb",
+      "nav path"
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "Full breadcrumb trail with separators",
+        "note": "Use EuiBreadcrumbs with a breadcrumbs array of { text, href } objects for a standard navigation trail."
+      },
+      {
+        "name": "Truncated",
+        "desc": "max={n} collapses middle items into a popover",
+        "note": "Use EuiBreadcrumbs with max={n} to collapse middle items into a popover when the trail is long."
+      },
+      {
+        "name": "Application context",
+        "desc": "type='application' for Kibana-style top nav",
+        "note": "Use EuiBreadcrumbs with type=\"application\" for Kibana-style application context breadcrumbs in the header."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "breadcrumbs",
+        "values": "{ text, href, onClick }[]",
+        "desc": "required array of crumbs"
+      },
+      {
+        "name": "max",
+        "values": "number|null",
+        "desc": "limit visible items, collapse rest"
+      },
+      {
+        "name": "truncate",
+        "values": "boolean",
+        "desc": "truncate long text with ellipsis"
+      },
+      {
+        "name": "type",
+        "values": "'application'|'page'",
+        "desc": "style context"
+      }
+    ]
+  },
+  "EuiTabs": {
+    "import": "import { EuiTabs, EuiTab } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/navigation/tabs/",
+    "category": "Navigation",
+    "aliases": [
+      "tabs",
+      "tab",
+      "tabbed navigation"
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "Standard horizontal tab bar",
+        "note": "Use EuiTabs with EuiTab children for a standard horizontal tab bar — manage active state with isSelected on each tab."
+      },
+      {
+        "name": "With bottom border",
+        "desc": "bottomBorder={true} for page-level tabs",
+        "note": "Use EuiTabs with bottomBorder={true} for page-level tabs that sit above the main content area with a separating line."
+      },
+      {
+        "name": "Small",
+        "desc": "size='s' compact tabs",
+        "note": "Use EuiTabs with size=\"s\" for compact tabs in panels, sidebars, or flyouts."
+      },
+      {
+        "name": "Scrollable",
+        "desc": "Overflow scrolls when tabs exceed width",
+        "note": "Use EuiTabs in a container narrower than the total tab width — overflow scrolls automatically on smaller screens."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "size",
+        "values": "'s'|'m'|'l'|'xl'",
+        "desc": "tab size"
+      },
+      {
+        "name": "bottomBorder",
+        "values": "boolean",
+        "desc": "adds separator line below"
+      },
+      {
+        "name": "expand",
+        "values": "boolean",
+        "desc": "equal-width tabs filling container"
+      }
+    ]
+  },
+  "EuiSteps": {
+    "import": "import { EuiSteps } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/navigation/steps/",
+    "category": "Navigation",
+    "aliases": [
+      "steps",
+      "stepper",
+      "wizard",
+      "onboarding"
+    ],
+    "variants": [
+      {
+        "name": "Default vertical",
+        "desc": "numbered steps stacked vertically",
+        "url": "https://eui.elastic.co/docs/components/navigation/steps/",
+        "note": "Use EuiSteps with a steps array for a vertical numbered step-by-step guide — each step has a title, children, and optional status."
+      },
+      {
+        "name": "With status",
+        "desc": "steps with complete/warning/danger states",
+        "url": "https://eui.elastic.co/docs/components/navigation/steps/#steps-with-status",
+        "note": "Use EuiSteps with status on each step to reflect progress — values are \"complete\", \"warning\", \"danger\", \"loading\", or \"incomplete\"."
+      },
+      {
+        "name": "Horizontal progress",
+        "desc": "progress bar style top-of-page stepper",
+        "url": "https://eui.elastic.co/docs/components/navigation/steps/#horizontal-steps",
+        "note": "Use EuiStepsHorizontal for a top-of-page progress bar style stepper — each step has a status and an onClick handler."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "steps",
+        "values": "{ title, children, status }[]",
+        "desc": "required step definitions"
+      },
+      {
+        "name": "firstStepNumber",
+        "values": "number",
+        "desc": "start numbering from n"
+      },
+      {
+        "name": "titleSize",
+        "values": "'xxs'|'xs'|'s'|'m'|'l'",
+        "desc": "heading size"
+      }
+    ]
+  },
+  "EuiSideNav": {
+    "import": "import { EuiSideNav } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/navigation/side-nav/",
+    "category": "Navigation",
+    "aliases": [
+      "sidenav",
+      "sidebar nav",
+      "nav menu",
+      "left nav"
+    ],
+    "variants": [
+      {
+        "name": "Default tree",
+        "desc": "Nested items with collapsible subtrees",
+        "note": "Use EuiSideNav with a nested items tree for a collapsible sidebar navigation — mark the active item with isSelected."
+      },
+      {
+        "name": "Mobile",
+        "desc": "mobileTitle + isOpenOnMobile for responsive",
+        "note": "Use EuiSideNav with mobileTitle and toggleOpenOnMobile to support a hamburger-style toggle on mobile viewports."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "items",
+        "values": "EuiSideNavItemType[]",
+        "desc": "required nested nav tree"
+      },
+      {
+        "name": "heading",
+        "values": "string",
+        "desc": "section title above nav"
+      },
+      {
+        "name": "mobileTitle",
+        "values": "string",
+        "desc": "trigger label on mobile"
+      },
+      {
+        "name": "toggleOpenOnMobile",
+        "values": "function",
+        "desc": "mobile toggle handler"
+      }
+    ]
+  },
+  "EuiSearchBar": {
+    "import": "import { EuiSearchBar } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/navigation/search-bar/",
+    "category": "Navigation",
+    "aliases": [
+      "searchbar",
+      "search bar",
+      "filter bar",
+      "query bar"
+    ],
+    "variants": [
+      {
+        "name": "With filters",
+        "desc": "filters prop adds dropdown filter buttons",
+        "note": "Use EuiSearchBar with a filters array to add dropdown filter buttons alongside the search input."
+      },
+      {
+        "name": "With schema",
+        "desc": "schema prop for field-aware query syntax",
+        "note": "Use EuiSearchBar with a schema to enable field-aware structured query syntax like status:active."
+      },
+      {
+        "name": "Controlled",
+        "desc": "query prop + onChange for controlled mode",
+        "note": "Use EuiSearchBar with query prop and onChange for fully controlled mode where you manage the query string externally."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "onChange",
+        "values": "({ query, queryText, error }) => void",
+        "desc": "fires on every change"
+      },
+      {
+        "name": "filters",
+        "values": "SearchFilterConfig[]",
+        "desc": "dropdown filter pills"
+      },
+      {
+        "name": "defaultQuery",
+        "values": "string",
+        "desc": "initial query string"
+      },
+      {
+        "name": "box",
+        "values": "{ placeholder, incremental }",
+        "desc": "input box config"
+      }
+    ]
+  },
+  "EuiContextMenu": {
+    "import": "import { EuiContextMenu } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/navigation/context-menu/",
+    "category": "Navigation",
+    "aliases": [
+      "contextmenu",
+      "context menu",
+      "nested menu",
+      "dropdown menu"
+    ],
+    "variants": [
+      {
+        "name": "Flat",
+        "desc": "Single panel list of actions",
+        "note": "Use EuiContextMenu with a flat single panel for a simple dropdown list of actions."
+      },
+      {
+        "name": "Nested",
+        "desc": "panels prop with multiple levels + back nav",
+        "note": "Use EuiContextMenu with multiple panels and nested item references to create a drill-down menu with automatic back navigation."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "panels",
+        "values": "EuiContextMenuPanelDescriptor[]",
+        "desc": "required panel definitions"
+      },
+      {
+        "name": "initialPanelId",
+        "values": "string|number",
+        "desc": "which panel to show first"
+      },
+      {
+        "name": "size",
+        "values": "'s'|'m'",
+        "desc": "menu size"
+      }
+    ]
+  },
+  "EuiLink": {
+    "import": "import { EuiLink } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/navigation/link/",
+    "category": "Navigation",
+    "aliases": [
+      "link",
+      "anchor",
+      "href"
+    ],
+    "keyProps": [
+      {
+        "name": "href",
+        "values": "string",
+        "desc": "URL — renders as <a>"
+      },
+      {
+        "name": "onClick",
+        "values": "function",
+        "desc": "renders as <button> when used without href"
+      },
+      {
+        "name": "color",
+        "values": "'primary'|'subdued'|'text'|'ghost'|'success'|'warning'|'danger'",
+        "desc": ""
+      },
+      {
+        "name": "external",
+        "values": "boolean",
+        "desc": "adds external icon and rel=noopener"
+      },
+      {
+        "name": "target",
+        "values": "'_blank'",
+        "desc": "open in new tab"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Anchor link",
+        "desc": "href renders as <a> tag",
+        "url": "https://eui.elastic.co/docs/components/navigation/link/",
+        "note": "Use EuiLink with href for a standard anchor tag — it inherits text color from context and adds hover underline."
+      },
+      {
+        "name": "External link",
+        "desc": "external adds icon and rel=noopener",
+        "url": "https://eui.elastic.co/docs/components/navigation/link/",
+        "note": "Use EuiLink with external={true} to add an external link icon and automatically set rel=\"noopener noreferrer\"."
+      },
+      {
+        "name": "Button link",
+        "desc": "onClick without href renders as <button>",
+        "url": "https://eui.elastic.co/docs/components/navigation/link/",
+        "note": "Use EuiLink with onClick and no href to render a button styled as a link — correct semantic HTML for in-page actions."
+      },
+      {
+        "name": "Colored",
+        "desc": "color prop for semantic or subdued links",
+        "url": "https://eui.elastic.co/docs/components/navigation/link/",
+        "note": "Use EuiLink with color=\"subdued\" for secondary links, \"danger\" for destructive links, or \"ghost\" on dark backgrounds."
+      }
+    ]
+  },
+  "EuiBadge": {
+    "import": "import { EuiBadge } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/display/badge/",
+    "category": "Display",
+    "aliases": [
+      "badge",
+      "tag",
+      "label",
+      "chip",
+      "status badge"
+    ],
+    "variants": [
+      {
+        "name": "Status color",
+        "desc": "color='success'|'warning'|'danger'|'primary'",
+        "note": "Use EuiBadge with color=\"success\", \"warning\", \"danger\", or \"primary\" for semantic status labels."
+      },
+      {
+        "name": "Custom color",
+        "desc": "color='#hexcode' for brand colors",
+        "note": "Use EuiBadge with a hex color string for custom brand or category color coding."
+      },
+      {
+        "name": "Clickable",
+        "desc": "onClick turns badge into a button",
+        "note": "Use EuiBadge with onClick to make it an interactive filter or toggle element."
+      },
+      {
+        "name": "With icon",
+        "desc": "iconType and iconSide",
+        "note": "Use EuiBadge with iconType and iconSide to add a leading or trailing icon to the badge label."
+      },
+      {
+        "name": "Notification badge",
+        "desc": "EuiNotificationBadge for counts",
+        "note": "Use EuiNotificationBadge to display a count indicator, typically overlaid on a button or avatar."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "color",
+        "values": "string|'hollow'",
+        "desc": "background color or hex"
+      },
+      {
+        "name": "iconType",
+        "values": "string",
+        "desc": "icon before the label"
+      },
+      {
+        "name": "onClick",
+        "values": "function",
+        "desc": "makes badge interactive"
+      }
+    ]
+  },
+  "EuiEmptyPrompt": {
+    "import": "import { EuiEmptyPrompt } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/display/empty-prompt/",
+    "category": "Display",
+    "aliases": [
+      "emptyprompt",
+      "empty state",
+      "zero state",
+      "placeholder",
+      "no data"
+    ],
+    "variants": [
+      {
+        "name": "With icon",
+        "desc": "standard empty state with illustration",
+        "url": "https://eui.elastic.co/docs/components/display/empty-prompt/",
+        "note": "Use EuiEmptyPrompt with an icon and actions for a standard empty state — wrap the title in an h2."
+      },
+      {
+        "name": "Loading",
+        "desc": "async loading state",
+        "url": "https://eui.elastic.co/docs/components/display/empty-prompt/#loading",
+        "note": "Use EuiEmptyPrompt with EuiLoadingLogo as the icon prop for an async loading state."
+      },
+      {
+        "name": "Error",
+        "desc": "error or failed state",
+        "url": "https://eui.elastic.co/docs/components/display/empty-prompt/#error-pages",
+        "note": "Use EuiEmptyPrompt with color=\"danger\" and iconType=\"warning\" for an error or failed state."
+      },
+      {
+        "name": "No permissions",
+        "desc": "access restricted state",
+        "url": "https://eui.elastic.co/docs/components/display/empty-prompt/#no-permission",
+        "note": "Use EuiEmptyPrompt with color=\"subdued\" and iconType=\"lock\" for a no-permissions or access-restricted state."
+      },
+      {
+        "name": "First use / onboarding",
+        "desc": "zero state with primary CTA",
+        "url": "https://eui.elastic.co/docs/components/display/empty-prompt/",
+        "note": "Use EuiEmptyPrompt as a first-use onboarding state — include a primary CTA button in the actions prop to guide users to the next step."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "icon",
+        "values": "ReactNode",
+        "desc": "top illustration or icon"
+      },
+      {
+        "name": "title",
+        "values": "ReactNode",
+        "desc": "required heading (wrap in <h2>)"
+      },
+      {
+        "name": "body",
+        "values": "ReactNode",
+        "desc": "explanatory text"
+      },
+      {
+        "name": "actions",
+        "values": "ReactNode|ReactNode[]",
+        "desc": "primary and secondary CTAs"
+      },
+      {
+        "name": "color",
+        "values": "'transparent'|'plain'|'subdued'|'primary'|'success'|'warning'|'danger'",
+        "desc": ""
+      }
+    ]
+  },
+  "EuiText": {
+    "import": "import { EuiText } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/display/text/",
+    "category": "Display",
+    "aliases": [
+      "text",
+      "paragraph",
+      "body text",
+      "typography"
+    ],
+    "keyProps": [
+      {
+        "name": "size",
+        "values": "'xs'|'s'|'m'|'relative'",
+        "desc": "text size (default 'm')"
+      },
+      {
+        "name": "color",
+        "values": "'default'|'subdued'|'success'|'warning'|'danger'|'ghost'",
+        "desc": ""
+      },
+      {
+        "name": "textAlign",
+        "values": "'left'|'center'|'right'",
+        "desc": "horizontal alignment"
+      },
+      {
+        "name": "grow",
+        "values": "boolean",
+        "desc": "false to prevent flex stretching"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Default body",
+        "desc": "wraps paragraphs with consistent typography",
+        "url": "https://eui.elastic.co/docs/components/display/text/",
+        "note": "Use EuiText to wrap body content — it applies consistent EUI typography to any HTML elements like p, ul, ol, or h tags inside it."
+      },
+      {
+        "name": "Small",
+        "desc": "size=s for secondary or supporting text",
+        "url": "https://eui.elastic.co/docs/components/display/text/",
+        "note": "Use EuiText with size=\"s\" for secondary descriptions, help text, or metadata below a primary element."
+      },
+      {
+        "name": "Extra small",
+        "desc": "size=xs for captions or labels",
+        "url": "https://eui.elastic.co/docs/components/display/text/",
+        "note": "Use EuiText with size=\"xs\" for captions, timestamps, or fine-print labels where minimal font size is needed."
+      },
+      {
+        "name": "Subdued",
+        "desc": "color=subdued for de-emphasised text",
+        "url": "https://eui.elastic.co/docs/components/display/text/",
+        "note": "Use EuiText with color=\"subdued\" to visually de-emphasise supporting or secondary content."
+      },
+      {
+        "name": "Ghost",
+        "desc": "color=ghost for text on dark backgrounds",
+        "url": "https://eui.elastic.co/docs/components/display/text/",
+        "note": "Use EuiText with color=\"ghost\" for white text on dark or colored panel backgrounds."
+      }
+    ]
+  },
+  "EuiTitle": {
+    "import": "import { EuiTitle } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/display/title/",
+    "category": "Display",
+    "aliases": [
+      "title",
+      "heading",
+      "h1",
+      "h2",
+      "h3",
+      "h4"
+    ],
+    "keyProps": [
+      {
+        "name": "size",
+        "values": "'xxxs'|'xxs'|'xs'|'s'|'m'|'l'",
+        "desc": "heading size (default 'm')"
+      },
+      {
+        "name": "textTransform",
+        "values": "'uppercase'|'none'",
+        "desc": "case override"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Large (l/m)",
+        "desc": "page-level headings",
+        "url": "https://eui.elastic.co/docs/components/display/title/",
+        "note": "Use EuiTitle with size=\"l\" or \"m\" for page-level headings — wrap an h1 or h2 inside for correct semantic HTML."
+      },
+      {
+        "name": "Small (s/xs)",
+        "desc": "section or panel headings",
+        "url": "https://eui.elastic.co/docs/components/display/title/",
+        "note": "Use EuiTitle with size=\"s\" or \"xs\" for section headings inside panels, flyouts, or cards."
+      },
+      {
+        "name": "Extra small (xxs/xxxs)",
+        "desc": "labels or tight UI headings",
+        "url": "https://eui.elastic.co/docs/components/display/title/",
+        "note": "Use EuiTitle with size=\"xxs\" or \"xxxs\" for compact UI labels, group headings, or tight sidebar sections."
+      },
+      {
+        "name": "Uppercase",
+        "desc": "textTransform=uppercase for category labels",
+        "url": "https://eui.elastic.co/docs/components/display/title/",
+        "note": "Use EuiTitle with textTransform=\"uppercase\" for category labels or section dividers that follow an all-caps convention."
+      }
+    ]
+  },
+  "EuiCode": {
+    "import": "import { EuiCode } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/display/code/",
+    "category": "Display",
+    "aliases": [
+      "code",
+      "inline code"
+    ],
+    "variants": [
+      {
+        "name": "Inline",
+        "desc": "EuiCode wraps short inline snippets in <code>",
+        "note": "Use EuiCode for short inline code snippets within a sentence or paragraph."
+      },
+      {
+        "name": "Block",
+        "desc": "EuiCodeBlock for multiline syntax-highlighted code",
+        "note": "Use EuiCodeBlock for multiline code with syntax highlighting — add isCopyable={true} for a copy button and overflowHeight to cap the height."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "language",
+        "values": "string",
+        "desc": "syntax language e.g. 'javascript'|'bash'|'json'"
+      },
+      {
+        "name": "isCopyable",
+        "values": "boolean",
+        "desc": "EuiCodeBlock — adds copy button"
+      },
+      {
+        "name": "overflowHeight",
+        "values": "number",
+        "desc": "EuiCodeBlock — max height before scroll"
+      },
+      {
+        "name": "fontSize",
+        "values": "'s'|'m'|'l'",
+        "desc": "EuiCodeBlock font size"
+      }
+    ]
+  },
+  "EuiStat": {
+    "import": "import { EuiStat } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/display/stat/",
+    "category": "Display",
+    "aliases": [
+      "stat",
+      "metric",
+      "kpi",
+      "number",
+      "count"
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "Large number with small label above",
+        "note": "Use EuiStat with a large title value and a description label for KPI metrics and summary numbers."
+      },
+      {
+        "name": "Reversed",
+        "desc": "titleElement above description",
+        "note": "Use EuiStat with the title above and description below by reversing the titleElement order."
+      },
+      {
+        "name": "With color",
+        "desc": "titleColor for semantic emphasis",
+        "note": "Use EuiStat with titleColor=\"success\", \"danger\", or \"warning\" to add semantic meaning to the metric value."
+      },
+      {
+        "name": "Loading",
+        "desc": "isLoading hides value with skeleton",
+        "note": "Use EuiStat with isLoading={true} to show a skeleton placeholder while the value is being fetched."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "title",
+        "values": "ReactNode",
+        "desc": "the big number or value"
+      },
+      {
+        "name": "description",
+        "values": "ReactNode",
+        "desc": "the label text"
+      },
+      {
+        "name": "titleColor",
+        "values": "'primary'|'success'|'danger'|'warning'|'subdued'",
+        "desc": ""
+      },
+      {
+        "name": "textAlign",
+        "values": "'left'|'center'|'right'",
+        "desc": ""
+      },
+      {
+        "name": "isLoading",
+        "values": "boolean",
+        "desc": "skeleton loading state"
+      }
+    ]
+  },
+  "EuiHealth": {
+    "import": "import { EuiHealth } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/display/health/",
+    "category": "Display",
+    "aliases": [
+      "health",
+      "status dot",
+      "indicator",
+      "dot"
+    ],
+    "keyProps": [
+      {
+        "name": "color",
+        "values": "'success'|'warning'|'danger'|'subdued'|string",
+        "desc": "dot color"
+      },
+      {
+        "name": "textSize",
+        "values": "'xs'|'s'|'m'|'inherit'",
+        "desc": ""
+      }
+    ],
+    "variants": [
+      {
+        "name": "Success",
+        "desc": "green dot for healthy or active state",
+        "url": "https://eui.elastic.co/docs/components/display/health/",
+        "note": "Use EuiHealth with color=\"success\" to indicate a healthy, active, or running status."
+      },
+      {
+        "name": "Warning",
+        "desc": "yellow dot for degraded or at-risk state",
+        "url": "https://eui.elastic.co/docs/components/display/health/",
+        "note": "Use EuiHealth with color=\"warning\" to indicate a degraded, at-risk, or needs-attention status."
+      },
+      {
+        "name": "Danger",
+        "desc": "red dot for failed or critical state",
+        "url": "https://eui.elastic.co/docs/components/display/health/",
+        "note": "Use EuiHealth with color=\"danger\" to indicate a failed, critical, or offline status."
+      },
+      {
+        "name": "Subdued",
+        "desc": "gray dot for inactive or unknown state",
+        "url": "https://eui.elastic.co/docs/components/display/health/",
+        "note": "Use EuiHealth with color=\"subdued\" for an inactive, paused, or unknown status where no semantic color applies."
+      },
+      {
+        "name": "Custom color",
+        "desc": "hex string for non-standard status colors",
+        "url": "https://eui.elastic.co/docs/components/display/health/",
+        "note": "Use EuiHealth with a hex color string when you need a custom status color outside the standard semantic palette."
+      }
+    ]
+  },
+  "EuiIcon": {
+    "import": "import { EuiIcon } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/display/icons/",
+    "category": "Display",
+    "aliases": [
+      "icon",
+      "svg",
+      "glyph"
+    ],
+    "keyProps": [
+      {
+        "name": "type",
+        "values": "string",
+        "desc": "required icon name e.g. 'check'|'warning'|'logoElastic'"
+      },
+      {
+        "name": "size",
+        "values": "'s'|'m'|'l'|'xl'|'xxl'|'original'",
+        "desc": "icon size"
+      },
+      {
+        "name": "color",
+        "values": "string",
+        "desc": "icon fill color"
+      }
+    ]
+  },
+  "EuiAvatar": {
+    "import": "import { EuiAvatar } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/display/avatar/",
+    "category": "Display",
+    "aliases": [
+      "avatar",
+      "user icon",
+      "profile picture",
+      "initials"
+    ],
+    "variants": [
+      {
+        "name": "Initials",
+        "desc": "Derives initials from name prop automatically",
+        "note": "Use EuiAvatar with a name prop — it automatically derives initials and picks a background color."
+      },
+      {
+        "name": "Image",
+        "desc": "imageUrl for photo avatar",
+        "note": "Use EuiAvatar with imageUrl to display a photo instead of initials."
+      },
+      {
+        "name": "Icon",
+        "desc": "iconType to use an EUI icon instead",
+        "note": "Use EuiAvatar with iconType to show an EUI icon instead of initials — useful for system or entity avatars."
+      },
+      {
+        "name": "Disabled",
+        "desc": "isDisabled grays out the avatar",
+        "note": "Use EuiAvatar with isDisabled={true} to render a grayed-out avatar for inactive or disabled users."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "name",
+        "values": "string",
+        "desc": "required — used for initials and aria-label"
+      },
+      {
+        "name": "imageUrl",
+        "values": "string",
+        "desc": "photo URL"
+      },
+      {
+        "name": "iconType",
+        "values": "string",
+        "desc": "EUI icon instead of initials"
+      },
+      {
+        "name": "size",
+        "values": "'s'|'m'|'l'|'xl'",
+        "desc": "avatar size"
+      },
+      {
+        "name": "color",
+        "values": "string|'plain'|'subdued'",
+        "desc": "background color"
+      }
+    ]
+  },
+  "EuiLoadingSpinner": {
+    "import": "import { EuiLoadingSpinner } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/display/loading/",
+    "category": "Display",
+    "aliases": [
+      "loading",
+      "spinner",
+      "loader"
+    ],
+    "variants": [
+      {
+        "name": "Spinner",
+        "desc": "EuiLoadingSpinner — circular spinner",
+        "note": "Use EuiLoadingSpinner for an inline or overlay circular loading indicator — control size with the size prop."
+      },
+      {
+        "name": "Elastic logo",
+        "desc": "EuiLoadingLogo — animated logo, use in empty states",
+        "note": "Use EuiLoadingLogo with logo=\"logoElastic\" as the icon in EuiEmptyPrompt for a full-page loading state."
+      },
+      {
+        "name": "Skeleton text",
+        "desc": "EuiSkeletonText — placeholder for text content",
+        "note": "Use EuiSkeletonText to show a placeholder for text content while data is loading."
+      },
+      {
+        "name": "Skeleton rectangle",
+        "desc": "EuiSkeletonRectangle — placeholder for blocks",
+        "note": "Use EuiSkeletonRectangle to show a placeholder for block-level content like images or cards while loading."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "size",
+        "values": "'s'|'m'|'l'|'xl'|'xxl'",
+        "desc": "spinner size"
+      }
+    ]
+  },
+  "EuiProgress": {
+    "import": "import { EuiProgress } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/display/progress/",
+    "category": "Display",
+    "aliases": [
+      "progress",
+      "progress bar",
+      "loading bar"
+    ],
+    "variants": [
+      {
+        "name": "Determinate",
+        "desc": "value + max for known progress",
+        "note": "Use EuiProgress with value and max for a determinate progress bar that shows known completion percentage."
+      },
+      {
+        "name": "Indeterminate",
+        "desc": "No value — animated loading bar",
+        "note": "Use EuiProgress without a value for an indeterminate animated loading bar when completion is unknown."
+      },
+      {
+        "name": "Fixed",
+        "desc": "position='fixed' top-of-page loading indicator",
+        "note": "Use EuiProgress with position=\"fixed\" for a thin top-of-page loading indicator during page transitions."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "value",
+        "values": "number",
+        "desc": "current progress value"
+      },
+      {
+        "name": "max",
+        "values": "number",
+        "desc": "maximum value (default 100)"
+      },
+      {
+        "name": "size",
+        "values": "'xs'|'s'|'m'|'l'",
+        "desc": "bar height"
+      },
+      {
+        "name": "color",
+        "values": "string",
+        "desc": "progress fill color"
+      },
+      {
+        "name": "position",
+        "values": "'fixed'|'absolute'|'static'",
+        "desc": "CSS position"
+      }
+    ]
+  },
+  "EuiToast": {
+    "import": "import { EuiGlobalToastList } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/display/toast/",
+    "category": "Display",
+    "aliases": [
+      "toast",
+      "notification",
+      "snackbar",
+      "global toast"
+    ],
+    "variants": [
+      {
+        "name": "Info (default)",
+        "desc": "Standard informational toast",
+        "note": "Use EuiGlobalToastList with a toasts array for standard informational notifications."
+      },
+      {
+        "name": "Success",
+        "desc": "color='success'",
+        "note": "Use EuiGlobalToastList with color=\"success\" on a toast for positive confirmation messages."
+      },
+      {
+        "name": "Warning",
+        "desc": "color='warning'",
+        "note": "Use EuiGlobalToastList with color=\"warning\" on a toast for non-critical alerts that need attention."
+      },
+      {
+        "name": "Danger",
+        "desc": "color='danger' for errors",
+        "note": "Use EuiGlobalToastList with color=\"danger\" on a toast for error notifications."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "toasts",
+        "values": "Toast[]",
+        "desc": "array of toast objects"
+      },
+      {
+        "name": "dismissToast",
+        "values": "function",
+        "desc": "required remove handler"
+      },
+      {
+        "name": "toastLifeTimeMs",
+        "values": "number",
+        "desc": "auto-dismiss delay in ms (default 10000)"
+      }
+    ]
+  },
+  "EuiListGroup": {
+    "import": "import { EuiListGroup, EuiListGroupItem } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/display/list-group/",
+    "category": "Display",
+    "aliases": [
+      "listgroup",
+      "list",
+      "menu list",
+      "action list"
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "Plain list of text items or links",
+        "note": "Use EuiListGroup with listItems for a plain list of text items or navigation links."
+      },
+      {
+        "name": "Flush",
+        "desc": "flush={true} removes border and padding",
+        "note": "Use EuiListGroup with flush={true} to remove the outer border and padding for a seamless inline list."
+      },
+      {
+        "name": "Bordered",
+        "desc": "bordered={true} adds a border around the group",
+        "note": "Use EuiListGroup with bordered={true} to wrap the list in a visible border for visual grouping."
+      },
+      {
+        "name": "With icons",
+        "desc": "EuiListGroupItem iconType for icons on each item",
+        "note": "Use EuiListGroup with EuiListGroupItem iconType to add a leading icon to each item."
+      },
+      {
+        "name": "With actions",
+        "desc": "EuiListGroupItem extraAction for icon button on hover",
+        "note": "Use EuiListGroup with EuiListGroupItem extraAction to show an icon button on hover for per-item actions."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "listItems",
+        "values": "EuiListGroupItemProps[]",
+        "desc": "shorthand array of items"
+      },
+      {
+        "name": "flush",
+        "values": "boolean",
+        "desc": "remove outer padding and border"
+      },
+      {
+        "name": "bordered",
+        "values": "boolean",
+        "desc": "outer border"
+      },
+      {
+        "name": "size",
+        "values": "'xs'|'s'|'m'|'l'",
+        "desc": "text size"
+      }
+    ]
+  },
+  "EuiDescriptionList": {
+    "import": "import { EuiDescriptionList } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/display/description-list/",
+    "category": "Display",
+    "aliases": [
+      "descriptionlist",
+      "description list",
+      "key value",
+      "metadata",
+      "dl"
+    ],
+    "variants": [
+      {
+        "name": "Column",
+        "desc": "type='column' side-by-side key/value pairs",
+        "note": "Use EuiDescriptionList with type=\"column\" to lay out key-value pairs side by side in two columns."
+      },
+      {
+        "name": "Inline",
+        "desc": "type='inline' label and value on same line",
+        "note": "Use EuiDescriptionList with type=\"inline\" to display label and value on the same line, separated by a colon."
+      },
+      {
+        "name": "Row (default)",
+        "desc": "Stacked label above value",
+        "note": "Use EuiDescriptionList with the default row type to stack the label above its value for metadata displays."
+      },
+      {
+        "name": "Responsive column",
+        "desc": "columnResponsive stacks on mobile",
+        "note": "Use EuiDescriptionList with type=\"responsiveColumn\" to show columns on desktop and switch to stacked rows on mobile."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "listItems",
+        "values": "{ title, description }[]",
+        "desc": "key-value data array"
+      },
+      {
+        "name": "type",
+        "values": "'row'|'column'|'inline'|'responsiveColumn'",
+        "desc": "layout style"
+      },
+      {
+        "name": "compressed",
+        "values": "boolean",
+        "desc": "tighter spacing"
+      },
+      {
+        "name": "titleProps",
+        "values": "HTMLAttributes",
+        "desc": "props applied to term elements"
+      }
+    ]
+  },
+  "EuiFieldText": {
+    "import": "import { EuiFieldText, EuiFormRow } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/forms/form-controls/",
+    "category": "Forms",
+    "aliases": [
+      "text input",
+      "input",
+      "text field",
+      "field"
+    ],
+    "variants": [
+      {
+        "name": "With form row",
+        "desc": "standard labelled input",
+        "url": "https://eui.elastic.co/docs/components/forms/layouts/usage/",
+        "note": "Use EuiFieldText inside EuiFormRow to get a labelled, accessible text input with optional help text."
+      },
+      {
+        "name": "Validation error",
+        "desc": "invalid state with error message",
+        "url": "https://eui.elastic.co/docs/components/forms/layouts/usage/#validation",
+        "note": "Use EuiFieldText with isInvalid={true} inside EuiFormRow with error prop to display validation errors."
+      },
+      {
+        "name": "With prepend / append",
+        "desc": "input group with label or button",
+        "url": "https://eui.elastic.co/docs/components/forms/form-controls/#prepend-and-append",
+        "note": "Use EuiFieldText with prepend and append props to create an input group with labels or action buttons."
+      },
+      {
+        "name": "Compressed (dense UI)",
+        "desc": "shorter height for toolbar or table use",
+        "url": "https://eui.elastic.co/docs/components/forms/form-controls/#compressed",
+        "note": "Use EuiFieldText with compressed={true} inside EuiFormRow with display=\"rowCompressed\" for dense toolbar or table filter UIs."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "value",
+        "values": "string",
+        "desc": "controlled value"
+      },
+      {
+        "name": "onChange",
+        "values": "function",
+        "desc": "change handler"
+      },
+      {
+        "name": "placeholder",
+        "values": "string",
+        "desc": ""
+      },
+      {
+        "name": "isInvalid",
+        "values": "boolean",
+        "desc": "shows error state"
+      },
+      {
+        "name": "prepend",
+        "values": "ReactNode",
+        "desc": "content before the input"
+      },
+      {
+        "name": "append",
+        "values": "ReactNode",
+        "desc": "content after the input"
+      },
+      {
+        "name": "compressed",
+        "values": "boolean",
+        "desc": "shorter height for dense UIs"
+      }
+    ]
+  },
+  "EuiFormRow": {
+    "import": "import { EuiFormRow } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/forms/layouts/usage/",
+    "category": "Forms",
+    "aliases": [
+      "formrow",
+      "form row",
+      "label",
+      "form field",
+      "field wrapper"
+    ],
+    "keyProps": [
+      {
+        "name": "label",
+        "values": "ReactNode",
+        "desc": "field label"
+      },
+      {
+        "name": "helpText",
+        "values": "ReactNode",
+        "desc": "helper text below input"
+      },
+      {
+        "name": "error",
+        "values": "string|string[]",
+        "desc": "validation error messages"
+      },
+      {
+        "name": "isInvalid",
+        "values": "boolean",
+        "desc": "triggers error styling"
+      },
+      {
+        "name": "isDisabled",
+        "values": "boolean",
+        "desc": ""
+      },
+      {
+        "name": "display",
+        "values": "'row'|'rowCompressed'|'columnCompressed'",
+        "desc": "layout style"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "label above input with optional help text",
+        "url": "https://eui.elastic.co/docs/components/forms/layouts/usage/",
+        "note": "Use EuiFormRow to wrap any form control — it provides the label, help text, and error message layout automatically."
+      },
+      {
+        "name": "With validation error",
+        "desc": "isInvalid + error shows red error message",
+        "url": "https://eui.elastic.co/docs/components/forms/layouts/usage/",
+        "note": "Use EuiFormRow with isInvalid={true} and error prop to display validation error messages below the input in red."
+      },
+      {
+        "name": "Compressed",
+        "desc": "display=rowCompressed for dense UIs",
+        "url": "https://eui.elastic.co/docs/components/forms/layouts/usage/",
+        "note": "Use EuiFormRow with display=\"rowCompressed\" for toolbars, filter bars, or any dense UI where vertical space is limited."
+      },
+      {
+        "name": "Column layout",
+        "desc": "display=columnCompressed for inline label+input",
+        "url": "https://eui.elastic.co/docs/components/forms/layouts/usage/",
+        "note": "Use EuiFormRow with display=\"columnCompressed\" to place the label inline to the left of the input in a horizontal layout."
+      },
+      {
+        "name": "No label",
+        "desc": "hasEmptyLabelSpace reserves space without a label",
+        "url": "https://eui.elastic.co/docs/components/forms/layouts/usage/",
+        "note": "Use EuiFormRow with hasEmptyLabelSpace={true} to align a control with adjacent labeled inputs without showing a label."
+      }
+    ]
+  },
+  "EuiComboBox": {
+    "import": "import { EuiComboBox } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/forms/combo-box/",
+    "category": "Forms",
+    "aliases": [
+      "combobox",
+      "multi select",
+      "tags input",
+      "autocomplete",
+      "typeahead"
+    ],
+    "variants": [
+      {
+        "name": "Multi select",
+        "desc": "default — select multiple options as tags",
+        "url": "https://eui.elastic.co/docs/components/forms/combo-box/",
+        "note": "Use EuiComboBox for multi-select — selected values appear as removable tags, options filtered by typing."
+      },
+      {
+        "name": "Single select",
+        "desc": "pick one option",
+        "url": "https://eui.elastic.co/docs/components/forms/combo-box/#single-selection",
+        "note": "Use EuiComboBox with singleSelection={{ asPlainText: true }} to restrict selection to one option."
+      },
+      {
+        "name": "Async / server-side",
+        "desc": "search-as-you-type with remote data",
+        "url": "https://eui.elastic.co/docs/components/forms/combo-box/#async-combo-box",
+        "note": "Use EuiComboBox with onSearchChange for async server-side filtering — set isLoading={true} while fetching."
+      },
+      {
+        "name": "Create custom option",
+        "desc": "allow free-text values",
+        "url": "https://eui.elastic.co/docs/components/forms/combo-box/#custom-options",
+        "note": "Use EuiComboBox with onCreateOption to allow users to type and create custom values not in the options list."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "options",
+        "values": "{ label, value? }[]",
+        "desc": "available options"
+      },
+      {
+        "name": "selectedOptions",
+        "values": "{ label }[]",
+        "desc": "controlled selected values"
+      },
+      {
+        "name": "onChange",
+        "values": "function",
+        "desc": "fired when selection changes"
+      },
+      {
+        "name": "singleSelection",
+        "values": "boolean|{ asPlainText }",
+        "desc": "single pick mode"
+      },
+      {
+        "name": "onCreateOption",
+        "values": "function",
+        "desc": "allow free-text custom options"
+      },
+      {
+        "name": "isLoading",
+        "values": "boolean",
+        "desc": "async loading state"
+      }
+    ]
+  },
+  "EuiSelect": {
+    "import": "import { EuiSelect } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/forms/form-controls/",
+    "category": "Forms",
+    "aliases": [
+      "select",
+      "dropdown select",
+      "native select"
+    ],
+    "keyProps": [
+      {
+        "name": "options",
+        "values": "{ value, text, disabled? }[]",
+        "desc": "option list"
+      },
+      {
+        "name": "value",
+        "values": "string",
+        "desc": "controlled selected value"
+      },
+      {
+        "name": "onChange",
+        "values": "function",
+        "desc": "change handler"
+      },
+      {
+        "name": "hasNoInitialSelection",
+        "values": "boolean",
+        "desc": "starts with blank option"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "native select dropdown",
+        "url": "https://eui.elastic.co/docs/components/forms/form-controls/",
+        "note": "Use EuiSelect for a native browser select dropdown — simple and accessible, best for short option lists."
+      },
+      {
+        "name": "With empty option",
+        "desc": "hasNoInitialSelection starts with blank",
+        "url": "https://eui.elastic.co/docs/components/forms/form-controls/",
+        "note": "Use EuiSelect with hasNoInitialSelection={true} to start with a blank placeholder option before any selection is made."
+      },
+      {
+        "name": "Compressed",
+        "desc": "compressed for dense toolbar use",
+        "url": "https://eui.elastic.co/docs/components/forms/form-controls/",
+        "note": "Use EuiSelect with compressed={true} for a shorter height select in toolbars or filter bars."
+      },
+      {
+        "name": "Disabled",
+        "desc": "disabled prop for read-only context",
+        "url": "https://eui.elastic.co/docs/components/forms/form-controls/",
+        "note": "Use EuiSelect with disabled={true} when the field should be visible but not editable in the current context."
+      }
+    ]
+  },
+  "EuiSuperSelect": {
+    "import": "import { EuiSuperSelect } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/forms/super-select/",
+    "category": "Forms",
+    "aliases": [
+      "superselect",
+      "super select",
+      "rich select",
+      "custom select"
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "Custom dropdown with rich option content",
+        "note": "Use EuiSuperSelect when options need rich content beyond a plain text label — use inputDisplay for the trigger and dropdownDisplay for the option."
+      },
+      {
+        "name": "With descriptions",
+        "desc": "inputDisplay vs dropdownDisplay for trigger vs option",
+        "note": "Use EuiSuperSelect with inputDisplay and dropdownDisplay to show a short label in the trigger but a full description in the dropdown."
+      },
+      {
+        "name": "Full width",
+        "desc": "fullWidth={true}",
+        "note": "Use EuiSuperSelect with fullWidth={true} to stretch the select to fill its container."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "options",
+        "values": "{ value, inputDisplay, dropdownDisplay? }[]",
+        "desc": "rich option list"
+      },
+      {
+        "name": "valueOfSelected",
+        "values": "string",
+        "desc": "controlled selected value"
+      },
+      {
+        "name": "onChange",
+        "values": "function",
+        "desc": "fired on selection"
+      },
+      {
+        "name": "hasDividers",
+        "values": "boolean",
+        "desc": "dividers between options"
+      }
+    ]
+  },
+  "EuiSwitch": {
+    "import": "import { EuiSwitch } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/forms/selection-controls/switch/",
+    "category": "Forms",
+    "aliases": [
+      "switch",
+      "toggle"
+    ],
+    "keyProps": [
+      {
+        "name": "label",
+        "values": "string",
+        "desc": "required accessible label"
+      },
+      {
+        "name": "checked",
+        "values": "boolean",
+        "desc": "controlled on/off state"
+      },
+      {
+        "name": "onChange",
+        "values": "function",
+        "desc": "toggle handler"
+      },
+      {
+        "name": "compressed",
+        "values": "boolean",
+        "desc": "smaller switch"
+      },
+      {
+        "name": "showLabel",
+        "values": "boolean",
+        "desc": "hide label visually (still accessible)"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "labeled toggle with on/off state",
+        "url": "https://eui.elastic.co/docs/components/forms/selection-controls/switch/",
+        "note": "Use EuiSwitch with a label, checked, and onChange — the label is always required for accessibility even if visually hidden."
+      },
+      {
+        "name": "Compressed",
+        "desc": "smaller switch for dense UIs",
+        "url": "https://eui.elastic.co/docs/components/forms/selection-controls/switch/",
+        "note": "Use EuiSwitch with compressed={true} for a smaller toggle in toolbars, settings rows, or table cells."
+      },
+      {
+        "name": "Hidden label",
+        "desc": "showLabel=false hides label visually",
+        "url": "https://eui.elastic.co/docs/components/forms/selection-controls/switch/",
+        "note": "Use EuiSwitch with showLabel={false} to hide the label visually while keeping it accessible to screen readers."
+      },
+      {
+        "name": "Loading",
+        "desc": "isLoading during async toggle",
+        "url": "https://eui.elastic.co/docs/components/forms/selection-controls/switch/",
+        "note": "Use EuiSwitch with isLoading={true} to show a loading state while an async toggle operation is in progress."
+      }
+    ]
+  },
+  "EuiCheckbox": {
+    "import": "import { EuiCheckbox } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/forms/selection-controls/checkboxes/",
+    "category": "Forms",
+    "aliases": [
+      "checkbox",
+      "check"
+    ],
+    "variants": [
+      {
+        "name": "Single",
+        "desc": "EuiCheckbox for a single controlled checkbox",
+        "note": "Use EuiCheckbox for a single controlled checkbox — always provide a unique id for the label association."
+      },
+      {
+        "name": "Group",
+        "desc": "EuiCheckboxGroup for multiple related checkboxes",
+        "note": "Use EuiCheckboxGroup for a set of related checkboxes — pass an options array and manage idToSelectedMap."
+      },
+      {
+        "name": "Indeterminate",
+        "desc": "indeterminate={true} for partial selection",
+        "note": "Use EuiCheckbox with indeterminate={true} for a parent checkbox that represents a partially selected group."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "id",
+        "values": "string",
+        "desc": "required for label association"
+      },
+      {
+        "name": "label",
+        "values": "ReactNode",
+        "desc": "checkbox label"
+      },
+      {
+        "name": "checked",
+        "values": "boolean",
+        "desc": "controlled state"
+      },
+      {
+        "name": "onChange",
+        "values": "function",
+        "desc": "toggle handler"
+      },
+      {
+        "name": "indeterminate",
+        "values": "boolean",
+        "desc": "partial state"
+      }
+    ]
+  },
+  "EuiRadioGroup": {
+    "import": "import { EuiRadioGroup } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/forms/selection-controls/radio-group/",
+    "category": "Forms",
+    "aliases": [
+      "radiogroup",
+      "radio group",
+      "radio"
+    ],
+    "keyProps": [
+      {
+        "name": "options",
+        "values": "{ id, label, disabled? }[]",
+        "desc": "radio option list"
+      },
+      {
+        "name": "idSelected",
+        "values": "string",
+        "desc": "controlled selected id"
+      },
+      {
+        "name": "onChange",
+        "values": "function",
+        "desc": "fires on selection"
+      },
+      {
+        "name": "name",
+        "values": "string",
+        "desc": "groups radios for form submission"
+      },
+      {
+        "name": "compressed",
+        "values": "boolean",
+        "desc": "tighter spacing"
+      }
+    ],
+    "variants": [
+      {
+        "name": "Default vertical",
+        "desc": "stacked radio options",
+        "url": "https://eui.elastic.co/docs/components/forms/selection-controls/radio-group/",
+        "note": "Use EuiRadioGroup with an options array and idSelected for a standard vertical stack of mutually exclusive radio options."
+      },
+      {
+        "name": "Compressed",
+        "desc": "tighter spacing for dense layouts",
+        "url": "https://eui.elastic.co/docs/components/forms/selection-controls/radio-group/",
+        "note": "Use EuiRadioGroup with compressed={true} for tighter vertical spacing in settings panels or compact forms."
+      },
+      {
+        "name": "With legend",
+        "desc": "legend prop groups radios accessibly",
+        "url": "https://eui.elastic.co/docs/components/forms/selection-controls/radio-group/",
+        "note": "Use EuiRadioGroup with a legend prop to provide an accessible group label via fieldset/legend — important when the group context is not obvious from surrounding content."
+      }
+    ]
+  },
+  "EuiRange": {
+    "import": "import { EuiRange } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/forms/range/",
+    "category": "Forms",
+    "aliases": [
+      "range",
+      "slider",
+      "dual range"
+    ],
+    "variants": [
+      {
+        "name": "Single",
+        "desc": "EuiRange — single thumb slider",
+        "note": "Use EuiRange for a single-thumb slider with min, max, and step — control the value with value and onChange."
+      },
+      {
+        "name": "Dual",
+        "desc": "EuiDualRange — two thumbs for min/max range",
+        "note": "Use EuiDualRange for a two-thumb range selector that lets users pick a minimum and maximum value."
+      },
+      {
+        "name": "With input",
+        "desc": "showInput='inputWithPopover' for typed input",
+        "note": "Use EuiRange with showInput=\"inputWithPopover\" to let users type a precise value directly into an input field."
+      },
+      {
+        "name": "With ticks",
+        "desc": "showTicks for step markers",
+        "note": "Use EuiRange with showTicks={true} to display step markers along the track for discrete value selection."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "min",
+        "values": "number",
+        "desc": ""
+      },
+      {
+        "name": "max",
+        "values": "number",
+        "desc": ""
+      },
+      {
+        "name": "step",
+        "values": "number",
+        "desc": "increment size"
+      },
+      {
+        "name": "value",
+        "values": "number|string",
+        "desc": "controlled value"
+      },
+      {
+        "name": "showInput",
+        "values": "boolean|'inputWithPopover'",
+        "desc": "adds a text input"
+      },
+      {
+        "name": "showLabels",
+        "values": "boolean",
+        "desc": "shows min/max labels"
+      }
+    ]
+  },
+  "EuiFilterGroup": {
+    "import": "import { EuiFilterGroup, EuiFilterButton } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/forms/filter-group/",
+    "category": "Forms",
+    "aliases": [
+      "filter",
+      "filter group",
+      "filter buttons",
+      "facets"
+    ],
+    "variants": [
+      {
+        "name": "Toggle filters",
+        "desc": "EuiFilterButton with hasActiveFilters",
+        "note": "Use EuiFilterGroup with EuiFilterButton and hasActiveFilters to show toggle-style filter buttons with active state."
+      },
+      {
+        "name": "With popover",
+        "desc": "EuiFilterButton + EuiPopover for filter dropdown",
+        "note": "Use EuiFilterGroup with EuiFilterButton combined with EuiPopover to open a filter options dropdown panel."
+      },
+      {
+        "name": "Full width",
+        "desc": "fullWidth={true}",
+        "note": "Use EuiFilterGroup with fullWidth={true} to stretch the filter bar to fill its container width."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "hasActiveFilters",
+        "values": "boolean",
+        "desc": "EuiFilterButton — shows active state"
+      },
+      {
+        "name": "numActiveFilters",
+        "values": "number",
+        "desc": "count shown in button"
+      },
+      {
+        "name": "isToggle",
+        "values": "boolean",
+        "desc": "button acts as a toggle"
+      }
+    ]
+  },
+  "EuiSelectable": {
+    "import": "import { EuiSelectable } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/forms/selectable/",
+    "category": "Forms",
+    "aliases": [
+      "selectable",
+      "searchable list",
+      "select list",
+      "filter list"
+    ],
+    "variants": [
+      {
+        "name": "Single select",
+        "desc": "Clicking an item selects it and deselects others",
+        "note": "Use EuiSelectable for a single-select filterable list — clicking an item selects it and deselects all others."
+      },
+      {
+        "name": "Multi select",
+        "desc": "Default — multiple items selectable",
+        "note": "Use EuiSelectable for a multi-select list — the default mode allows any number of items to be selected."
+      },
+      {
+        "name": "With search",
+        "desc": "searchable={true} adds a search box",
+        "note": "Use EuiSelectable with searchable={true} to add a search input above the list for filtering options by typing."
+      },
+      {
+        "name": "With custom render",
+        "desc": "renderOption for custom item content",
+        "note": "Use EuiSelectable with renderOption to fully customize how each list item is displayed."
+      },
+      {
+        "name": "Virtualized",
+        "desc": "Handles thousands of items via windowing",
+        "note": "Use EuiSelectable for large datasets — it uses windowing internally to handle thousands of items without performance issues."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "options",
+        "values": "EuiSelectableOption[]",
+        "desc": "list items"
+      },
+      {
+        "name": "onChange",
+        "values": "function",
+        "desc": "fires when selection changes"
+      },
+      {
+        "name": "searchable",
+        "values": "boolean",
+        "desc": "adds search input above list"
+      },
+      {
+        "name": "singleSelection",
+        "values": "boolean|'always'",
+        "desc": "single pick mode"
+      },
+      {
+        "name": "renderOption",
+        "values": "function",
+        "desc": "custom item renderer"
+      }
+    ]
+  },
+  "EuiBasicTable": {
+    "import": "import { EuiBasicTable } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/tables/basic/",
+    "category": "Tables",
+    "aliases": [
+      "table",
+      "basic table",
+      "data table"
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "simple data table",
+        "url": "https://eui.elastic.co/docs/components/tables/basic/",
+        "note": "Use EuiBasicTable with items and columns for a simple data table — add an actions column for row-level edit and delete buttons."
+      },
+      {
+        "name": "With pagination and sorting",
+        "desc": "full data table with controls",
+        "url": "https://eui.elastic.co/docs/components/tables/basic/#pagination-and-sorting",
+        "note": "Use EuiBasicTable with pagination and sorting props and an onChange handler to manage server-side data fetching."
+      },
+      {
+        "name": "With row selection",
+        "desc": "checkbox selection on rows",
+        "url": "https://eui.elastic.co/docs/components/tables/basic/#selection",
+        "note": "Use EuiBasicTable with itemId and selection props to enable checkbox row selection."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "items",
+        "values": "T[]",
+        "desc": "required data array"
+      },
+      {
+        "name": "columns",
+        "values": "EuiBasicTableColumn[]",
+        "desc": "required column definitions"
+      },
+      {
+        "name": "pagination",
+        "values": "Pagination",
+        "desc": "pageIndex, pageSize, totalItemCount"
+      },
+      {
+        "name": "sorting",
+        "values": "{ sort: { field, direction } }",
+        "desc": ""
+      },
+      {
+        "name": "selection",
+        "values": "EuiTableSelectionType",
+        "desc": "row checkbox selection"
+      },
+      {
+        "name": "onChange",
+        "values": "function",
+        "desc": "fires on sort/page change"
+      }
+    ]
+  },
+  "EuiInMemoryTable": {
+    "import": "import { EuiInMemoryTable } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/tables/in-memory/",
+    "category": "Tables",
+    "aliases": [
+      "inmemorytable",
+      "auto table",
+      "sortable table"
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "Auto-handles sort, paginate, search from items array",
+        "note": "Use EuiInMemoryTable when all data is available client-side — it handles sorting, pagination, and search automatically from the items array."
+      },
+      {
+        "name": "With search",
+        "desc": "search prop adds EuiSearchBar above table",
+        "note": "Use EuiInMemoryTable with search={true} or a search config to add a built-in EuiSearchBar above the table."
+      },
+      {
+        "name": "With selection",
+        "desc": "selection prop for row checkboxes",
+        "note": "Use EuiInMemoryTable with selection prop to enable checkbox row selection managed automatically."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "items",
+        "values": "T[]",
+        "desc": "required full data array (manages paging/sort)"
+      },
+      {
+        "name": "columns",
+        "values": "EuiBasicTableColumn[]",
+        "desc": "required column definitions"
+      },
+      {
+        "name": "pagination",
+        "values": "boolean|PaginationOptions",
+        "desc": "auto pagination"
+      },
+      {
+        "name": "sorting",
+        "values": "boolean|SortingOptions",
+        "desc": "auto sorting"
+      },
+      {
+        "name": "search",
+        "values": "boolean|EuiSearchBarProps",
+        "desc": "built-in search bar"
+      }
+    ]
+  },
+  "EuiDataGrid": {
+    "import": "import { EuiDataGrid } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/data-grid/",
+    "category": "Data Grid",
+    "aliases": [
+      "datagrid",
+      "data grid",
+      "spreadsheet",
+      "grid",
+      "virtual table"
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "Virtualized grid for large datasets",
+        "note": "Use EuiDataGrid for large virtualized datasets — provide rowCount and a renderCellValue function instead of pre-rendered rows."
+      },
+      {
+        "name": "With toolbar",
+        "desc": "toolbarVisibility controls sort/column/density buttons",
+        "note": "Use EuiDataGrid with toolbarVisibility to control which toolbar controls are shown — column visibility, sort, density, and fullscreen."
+      },
+      {
+        "name": "Cell popovers",
+        "desc": "renderCellPopover for expanded cell content",
+        "note": "Use EuiDataGrid with renderCellPopover to show expanded cell content in a popover when a cell is clicked."
+      },
+      {
+        "name": "Row heights",
+        "desc": "rowHeightsOptions for auto or fixed height rows",
+        "note": "Use EuiDataGrid with rowHeightsOptions to set auto-sizing or fixed pixel heights per row."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "columns",
+        "values": "EuiDataGridColumn[]",
+        "desc": "required column definitions"
+      },
+      {
+        "name": "rowCount",
+        "values": "number",
+        "desc": "required total row count"
+      },
+      {
+        "name": "renderCellValue",
+        "values": "({ rowIndex, columnId }) => ReactNode",
+        "desc": "required cell renderer"
+      },
+      {
+        "name": "columnVisibility",
+        "values": "{ visibleColumns, setVisibleColumns }",
+        "desc": ""
+      },
+      {
+        "name": "sorting",
+        "values": "EuiDataGridSorting",
+        "desc": "sort state and handler"
+      },
+      {
+        "name": "pagination",
+        "values": "EuiDataGridPaginationProps",
+        "desc": ""
+      }
+    ]
+  },
+  "EuiPageTemplate": {
+    "import": "import { EuiPageTemplate } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/templates/page-template/",
+    "category": "Templates",
+    "aliases": [
+      "page template",
+      "page layout",
+      "pagetemplate",
+      "app layout"
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "Full-page layout with sidebar and content area",
+        "note": "Use EuiPageTemplate as the root layout wrapper for a full Kibana-style page with consistent padding and max-width."
+      },
+      {
+        "name": "With sidebar",
+        "desc": "EuiPageTemplate.Sidebar for left nav panel",
+        "note": "Use EuiPageTemplate.Sidebar for a persistent left-side panel — combine with EuiSideNav for section navigation."
+      },
+      {
+        "name": "Empty state",
+        "desc": "EuiPageTemplate.EmptyPrompt for zero-state pages",
+        "note": "Use EuiPageTemplate.EmptyPrompt to center an EuiEmptyPrompt within the page layout for zero-state or error pages."
+      },
+      {
+        "name": "Bottom bar",
+        "desc": "EuiPageTemplate.BottomBar for fixed footer actions",
+        "note": "Use EuiPageTemplate.BottomBar for a fixed footer that holds save or action buttons pinned to the bottom of the viewport."
+      },
+      {
+        "name": "Centered body",
+        "desc": "panelled={false} centered layout",
+        "note": "Use EuiPageTemplate with panelled={false} for a centered content layout without the panel background."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "panelled",
+        "values": "boolean",
+        "desc": "adds panel background to sections"
+      },
+      {
+        "name": "restrictWidth",
+        "values": "boolean|number|string",
+        "desc": "max content width"
+      },
+      {
+        "name": "paddingSize",
+        "values": "'none'|'s'|'m'|'l'|'xl'",
+        "desc": ""
+      },
+      {
+        "name": "grow",
+        "values": "boolean",
+        "desc": "fill full viewport height"
+      }
+    ]
+  },
+  "EuiMarkdownEditor": {
+    "import": "import { EuiMarkdownEditor } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/editors-and-syntax/markdown/editor/",
+    "category": "Editors",
+    "aliases": [
+      "markdown editor",
+      "md editor",
+      "rich text",
+      "wysiwyg"
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "Editor with preview toggle and toolbar",
+        "note": "Use EuiMarkdownEditor for a full write-and-preview markdown editor with toolbar — bind value and onChange for controlled mode."
+      },
+      {
+        "name": "Read-only preview",
+        "desc": "EuiMarkdownFormat for display-only rendering",
+        "note": "Use EuiMarkdownFormat to render markdown as formatted HTML without any editing capability."
+      },
+      {
+        "name": "Custom plugins",
+        "desc": "parsingPlugins + processingPlugins for extensions",
+        "note": "Use EuiMarkdownEditor with parsingPlugins and processingPlugins to extend the editor with custom syntax and rendering."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "value",
+        "values": "string",
+        "desc": "markdown string content"
+      },
+      {
+        "name": "onChange",
+        "values": "function",
+        "desc": "content change handler"
+      },
+      {
+        "name": "height",
+        "values": "number|'full'",
+        "desc": "editor height"
+      },
+      {
+        "name": "aria-label",
+        "values": "string",
+        "desc": "required for accessibility"
+      }
+    ]
+  },
+  "EuiResizableContainer": {
+    "import": "import { EuiResizableContainer } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/utilities/resizable-container/",
+    "category": "Utilities",
+    "aliases": [
+      "resizable",
+      "resize",
+      "split panel",
+      "draggable split"
+    ],
+    "variants": [
+      {
+        "name": "Horizontal",
+        "desc": "direction='horizontal' side-by-side panels",
+        "note": "Use EuiResizableContainer with direction=\"horizontal\" to create two side-by-side panels with a draggable divider."
+      },
+      {
+        "name": "Vertical",
+        "desc": "direction='vertical' stacked panels",
+        "note": "Use EuiResizableContainer with direction=\"vertical\" to create two stacked panels with a draggable divider."
+      },
+      {
+        "name": "With collapse",
+        "desc": "EuiResizablePanel mode='collapsible' to collapse a panel",
+        "note": "Use EuiResizableContainer with EuiResizablePanel mode=\"collapsible\" to allow one panel to be fully collapsed."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "direction",
+        "values": "'horizontal'|'vertical'",
+        "desc": "split axis"
+      },
+      {
+        "name": "onPanelWidthChange",
+        "values": "function",
+        "desc": "fires when panel resizes"
+      }
+    ]
+  },
+  "EuiColorPicker": {
+    "import": "import { EuiColorPicker } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/forms/color-picker/",
+    "category": "Forms",
+    "aliases": [
+      "color picker",
+      "colour picker",
+      "colorpicker"
+    ],
+    "variants": [
+      {
+        "name": "Default",
+        "desc": "Swatch + hex input that opens color picker popover",
+        "note": "Use EuiColorPicker as a swatch-and-input that opens a full color picker popover — bind color and onChange."
+      },
+      {
+        "name": "Swatches only",
+        "desc": "mode='swatch' for predefined color palette",
+        "note": "Use EuiColorPicker with mode=\"swatch\" to restrict selection to a predefined palette of swatches only."
+      },
+      {
+        "name": "Inline",
+        "desc": "display='inline' always visible",
+        "note": "Use EuiColorPicker with display=\"inline\" to always show the color picker without a popover trigger."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "color",
+        "values": "string",
+        "desc": "controlled hex color value"
+      },
+      {
+        "name": "onChange",
+        "values": "function",
+        "desc": "fires on color change"
+      },
+      {
+        "name": "swatches",
+        "values": "string[]",
+        "desc": "preset color options"
+      },
+      {
+        "name": "mode",
+        "values": "'default'|'swatch'|'picker'",
+        "desc": "picker UI mode"
+      }
+    ]
+  },
+  "EuiDatePicker": {
+    "import": "import { EuiDatePicker } from '@elastic/eui';",
+    "docs": "https://eui.elastic.co/docs/components/forms/date-picker/",
+    "category": "Forms",
+    "aliases": [
+      "datepicker",
+      "date",
+      "calendar",
+      "date input"
+    ],
+    "variants": [
+      {
+        "name": "Single date",
+        "desc": "EuiDatePicker for single date selection",
+        "note": "Use EuiDatePicker for a single date — bind selected to a moment object and handle onChange to update it."
+      },
+      {
+        "name": "Date range",
+        "desc": "EuiDatePickerRange with startDate + endDate",
+        "note": "Use EuiDatePickerRange with startDateControl and endDateControl to let users select a date range."
+      },
+      {
+        "name": "With time",
+        "desc": "showTimeSelect to pick time alongside date",
+        "note": "Use EuiDatePicker with showTimeSelect={true} to add a time picker alongside the calendar."
+      }
+    ],
+    "keyProps": [
+      {
+        "name": "selected",
+        "values": "Moment|null",
+        "desc": "controlled selected date (moment.js)"
+      },
+      {
+        "name": "onChange",
+        "values": "function",
+        "desc": "fires on date selection"
+      },
+      {
+        "name": "showTimeSelect",
+        "values": "boolean",
+        "desc": "adds time picker"
+      },
+      {
+        "name": "minDate",
+        "values": "Moment",
+        "desc": "earliest selectable date"
+      },
+      {
+        "name": "maxDate",
+        "values": "Moment",
+        "desc": "latest selectable date"
+      },
+      {
+        "name": "dateFormat",
+        "values": "string",
+        "desc": "display format string"
+      }
+    ]
+  }
+}
